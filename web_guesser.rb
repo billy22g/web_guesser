@@ -1,6 +1,7 @@
 require 'sinatra'
 
+random_number = rand(100)
+
   get '/' do 
-    stored_number = "The secret number is #{rand(100)}"
-    stored_number 
+    "The secret number is #{random_number}"
   end
