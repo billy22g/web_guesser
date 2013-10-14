@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html>
   <head>
@@ -8,22 +6,20 @@
       body { color: blue; }
     </style>  
   </head>
-
   <body>
+    <p>
+      Try your hand at guessing the secret number!
+    </p>
 
     <form>
       <input type="text" name="guess" />
       <input type="submit" value="Guess!" />
+      <input type="reset" value="Reset" />
     </form>
-
-    <p>
-      The secret number is <%= number %>
-    </p>
 
     <p>
       <%= message %>
     </p>
-
   </body>
 </html>
 
