@@ -1,14 +1,30 @@
+
+
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>"Secret Number Game! Enjoy!"</title>
     <style>
-      body { background-color: gold; 
-             color: navy-blue; }
-    </style>
+      body { color: blue; }
+    </style>  
   </head>
+
   <body>
-    <h1>The SECRET NUMBER is <%= random_number %></h1>
+
+    <form>
+      <input type="text" name="guess" />
+      <input type="submit" value="Guess!" />
+    </form>
+
+    <p>
+      The secret number is <%= number %>
+    </p>
+
+    <p>
+      <%= message %>
+    </p>
+
   </body>
 </html>
+
+
