@@ -3,13 +3,19 @@
   <head>
     <meta charset="utf-8">
     <style>
-      body { color: blue; }
+      body { color: white;
+             background-color: <%= color %>;
+             text-align: center;
+             border: medium;
+             border-color: red;
+             }
+      
     </style>  
   </head>
   <body>
-    <p>
+    <h1>
       Try your hand at guessing the secret number!
-    </p>
+    </h1>
 
     <form>
       <input type="text" name="guess" />
@@ -17,9 +23,10 @@
       <input type="reset" value="Reset" />
     </form>
 
-    <p>
+    <h2>
       <%= message %>
-    </p>
+    </h2>
+
   </body>
 </html>
 
